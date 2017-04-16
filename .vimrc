@@ -48,6 +48,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'dodie/vim-disapprove-deep-indentation'
 Plug 'wikitopian/hardmode'
 Plug 'tpope/vim-surround'
+Plug 'carakan/new-railscasts-theme'
+Plug 'KeitaNakamura/neodark.vim'
 
 let g:make = 'gmake'
 if exists('make')
@@ -71,9 +73,6 @@ endif
 
 Plug 'honza/vim-snippets'
 
-"" Color
-Plug 'tomasr/molokai'
-
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
@@ -81,7 +80,6 @@ Plug 'tomasr/molokai'
 " html
 "" HTML Bundle
 Plug 'hail2u/vim-css3-syntax'
-Plug 'gorodinskiy/vim-coloresque'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
 
@@ -159,9 +157,6 @@ set ruler
 set number
 
 let no_buffers_menu=1
-if !exists('g:not_finish_vimplug')
-  colorscheme molokai
-endif
 
 set mousemodel=popup
 set t_Co=256
@@ -520,3 +515,5 @@ set relativenumber
 set wildignore+=node_modules/**
 set wildignore+=bower_components/**
 
+colorscheme neodark
+"colorscheme new-railscasts
